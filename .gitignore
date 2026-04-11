@@ -1,9 +1,0 @@
-*obj
-*bin
-appsettings*
-Properties
-launchSettings.json
-*.http
-.gitignore
-.vs
-RunnerHelper.slnx
