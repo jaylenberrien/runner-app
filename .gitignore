@@ -4,3 +4,4 @@ appsettings*
 Properties
 launchSettings.json
 *.http
+.vs

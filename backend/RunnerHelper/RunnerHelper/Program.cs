@@ -1,10 +1,19 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+public void Factory(ConfigureServices, ConfigureConfiguration)
+
+public void ConfigureConfiguration(IConfiguration configuration)
+{
+
+}
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers();
+    services.AddOpenApi();
+    services.AddScoped<UserOrchestrator>();
+}
 
 var app = builder.Build();
 
